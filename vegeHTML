@@ -5,40 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegetables</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2e9;
+        /* Color system */
+        :root {
+            --primary-color: #778A50;
+            --background-color: #EDF2C5;
+            --content-text-color: #7D7D7D;
+            --content-bg-color: #F7FBDA;
         }
+
+        /* Typography system - Noto Sans */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&display=swap');
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            background-color: var(--background-color);
+            color: var(--content-text-color);
+        }
+
         header {
-            background-color: #a0b589;
+            background-color: var(--primary-color);
             text-align: center;
             padding: 10px;
-            font-size: 2em;
-            color: #52633a;
+            font-size: 44px; /* Head1 */
+            color: white;
+            font-weight: 700; /* Bold */
         }
+
         nav {
             display: flex;
             justify-content: center;
-            background-color: #6b8050;
+            background-color: var(--primary-color);
         }
         nav a {
             padding: 15px 30px;
             color: white;
             text-decoration: none;
+            font-size: 16px; /* Head2 */
+            line-height: 24px; /* 150% of 16px */
         }
         nav a:hover {
             background-color: #4a5937;
         }
+
         .content {
             display: flex;
             justify-content: center;
             margin: 20px;
+            background-color: var(--content-bg-color);
         }
         .content img {
             width: 100%;
             max-width: 800px;
             border-radius: 10px;
         }
+
         .section {
             display: flex;
             justify-content: space-around;
@@ -48,16 +68,24 @@
             width: 30%;
             text-align: center;
         }
+        .section div img {
+            width: 100%;
+            height: auto;
+        }
+
         .contact {
             text-align: center;
             margin: 20px;
+            font-size: 14px; /* Text1 */
         }
+
         footer {
-            background-color: #a0b589;
+            background-color: var(--primary-color);
             text-align: center;
             padding: 10px;
-            font-size: 0.9em;
-            color: #52633a;
+            font-size: 12px; /* Text2 */
+            line-height: 18px; /* 150% of 12px */
+            color: white;
         }
     </style>
 </head>
@@ -81,13 +109,13 @@
 
 <div class="section">
     <div>
-        <img src="carrots.jpg" alt="Carrots" width="100%">
+        <img src="carrots.jpg" alt="Carrots">
     </div>
     <div>
-        <img src="corn.jpg" alt="Corn" width="100%">
+        <img src="corn.jpg" alt="Corn">
     </div>
     <div>
-        <img src="yellow-pepper.jpg" alt="Yellow Pepper" width="100%">
+        <img src="yellow-pepper.jpg" alt="Yellow Pepper">
     </div>
 </div>
 
