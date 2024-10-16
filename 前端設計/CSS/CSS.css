@@ -11,7 +11,7 @@ html {
 
 body {
     font-family: 'Noto Sans TC';
-    margin: 0px;
+    margin: 0;
 }
 
 .container {
@@ -96,6 +96,9 @@ body {
     text-decoration: none;
     color: #EDF2C5;
     padding: 0 20px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .nav a:hover {
@@ -105,53 +108,13 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Navigation items */
-.home {
-    margin-left: 30px;
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 24px;
-}
-
-.aboutus {
-    margin-left: 62px;
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 24px;
-}
-
-.vegetables {
-    margin-left: 66px;
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 24px;
-}
-
-.online {
-    margin-left: 67px;
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 24px;
-}
-
-.contact {
-    margin-left: 61px;
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 24px;
-}
-
 /* Aside */
 .aside {
     display: flex;
     justify-content: space-between;
 }
 
-.aside-left {
-    width: 528px;
-}
-
-.aside-right {
+.aside-left, .aside-right {
     width: 528px;
 }
 
@@ -165,7 +128,7 @@ body {
     margin-bottom: 16px;
 }
 
-.aside-right-header, .aside-left-header {
+.aside-left-header, .aside-right-header {
     color: #EDF2C5;
     margin-left: 30px;
     font-weight: 900;
