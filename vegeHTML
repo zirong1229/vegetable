@@ -1,134 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegetables</title>
-    <style>
-        /* Color system */
-        :root {
-            --primary-color: #778A50;
-            --background-color: #EDF2C5;
-            --content-text-color: #7D7D7D;
-            --content-bg-color: #F7FBDA;
-        }
-
-        /* Typography system - Noto Sans */
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&display=swap');
-
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            background-color: var(--background-color);
-            color: var(--content-text-color);
-        }
-
-        header {
-            background-color: var(--primary-color);
-            text-align: center;
-            padding: 10px;
-            font-size: 44px; /* Head1 */
-            color: white;
-            font-weight: 700; /* Bold */
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: var(--primary-color);
-        }
-        nav a {
-            padding: 15px 30px;
-            color: white;
-            text-decoration: none;
-            font-size: 16px; /* Head2 */
-            line-height: 24px; /* 150% of 16px */
-        }
-        nav a:hover {
-            background-color: #4a5937;
-        }
-
-        .content {
-            display: flex;
-            justify-content: center;
-            margin: 20px;
-            background-color: var(--content-bg-color);
-        }
-        .content img {
-            width: 100%;
-            max-width: 800px;
-            border-radius: 10px;
-        }
-
-        .section {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .section div {
-            width: 30%;
-            text-align: center;
-        }
-        .section div img {
-            width: 100%;
-            height: auto;
-        }
-
-        .contact {
-            text-align: center;
-            margin: 20px;
-            font-size: 14px; /* Text1 */
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            text-align: center;
-            padding: 10px;
-            font-size: 12px; /* Text2 */
-            line-height: 18px; /* 150% of 12px */
-            color: white;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-
-<header>
-    Vegetables
+ <!--tittle-->
+ <header class="header">
+    <h1 class="header-left">Vegetables</h1>
+    <div class="header-right">
+        <img src="img/facebook.png" alt="Facebook icon">
+        <img src="img/instagram.png" alt="Instagram icon" class="instagram">
+        <hr class="line">
+        <p class="login">LOGIN</p>
+        <p class="join">JOIN</p>
+    </div>
 </header>
-
-<nav>
-    <a href="#">Home</a>
-    <a href="#">About Us</a>
-    <a href="#">Vegetables</a>
-    <a href="#">Online</a>
-    <a href="#">Contact</a>
-</nav>
-
-<div class="content">
-    <img src="yellow-vegetables.jpg" alt="Yellow Vegetables">
-</div>
-
-<div class="section">
-    <div>
-        <img src="carrots.jpg" alt="Carrots">
+    <div class="container">
+        <!--guide-->
+        <nav class="nav">
+            <h2 class="home">Home</h2>
+            <h2 class="aboutus">About Us</h2>
+            <h2 class="vegetables">Vegetables</h2>
+            <h2 class="online">Online</h2>
+            <h2 class="contact">Contact</h2>        
+        </nav>
+        <!--pumpkin-->
+        <img src="img/pumpkin.png" alt="pumpkin" width="1120px" heigh="448px">
+        <div class="aside">
+            <!--left-->
+            <div class="aside-left">
+                <div class="aside-left-bg">
+                    <h3 class="aside-left-header">Vegetables</h2>
+                </div>
+                    <div class="aside-left-content">
+                        <img src="img/carrot.png" alt="carrot" width="165px" height="140px">
+                        <img src="img/corn.png" alt="carrot" width="165px" height="140px">
+                        <img src="img/pepper.png" alt="carrot" width="165px" height="140px">
+                    </div>
+            </div>
+            <!--right-->
+            <div class="aside-right">
+                <div class="aside-right-bg">
+                    <h3 class="aside-right-header">Contact</h2>
+                </div>
+                    <div class="aside-right-content">
+                        <p style="height: 54px;margin: 0px">For any questions or suggestions about Vegetables, Vegetables Club or your online <br>order you can contact Vegetables Customer Service by phone, email or post and we'll be <br>happy to help.</p>
+                        <hr>
+                        <p style="margin: 0;">E-mail: Vegetables@aaabbccc.com</p>
+                        <p style="margin: 0;">PHONE: +886-123-456-789</p>
+                    </div>
+            </div> 
+        </div>     
     </div>
-    <div>
-        <img src="corn.jpg" alt="Corn">
-    </div>
-    <div>
-        <img src="yellow-pepper.jpg" alt="Yellow Pepper">
-    </div>
-</div>
-
-<div class="contact">
-    <h3>Contact</h3>
-    <p>For any questions or suggestions about Vegetables, Vegetables Club, or your online order, you can contact Vegetables Customer Service by phone, email, or post, and we'll be happy to help.</p>
-    <p>Email: <a href="mailto:Vegetables@aabbcc.com">Vegetables@aabbcc.com</a><br>
-    Phone: +886-123-456-789</p>
-</div>
-
-<footer>
-    Copyrights 2017 Vegetables Co / Design by Vegetables
-</footer>
-
+<!--bottom-->  
+<footer class="footer">
+    <p>Copyrights 2017 Vegetables cise / Design by Vegetables</p>
+</footer>     
 </body>
 </html>
