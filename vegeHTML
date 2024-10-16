@@ -11,8 +11,8 @@
  <header class="header">
     <h1 class="header-left">Vegetables</h1>
     <div class="header-right">
-        <img src="img/facebook.png" alt="Facebook icon">
-        <img src="img/instagram.png" alt="Instagram icon" class="instagram">
+        <img src="img/img_facebook" alt="Facebook icon">
+        <img src="img/img_instagram" alt="Instagram icon" class="instagram">
         <hr class="line">
         <p class="login">LOGIN</p>
         <p class="join">JOIN</p>
@@ -27,8 +27,8 @@
             <h2 class="online">Online</h2>
             <h2 class="contact">Contact</h2>        
         </nav>
-        <!--pumpkin-->
-        <img src="img/pumpkin.png" alt="pumpkin" width="1120px" heigh="448px">
+        <!--mainpumpkin-->
+        <img src="img/img_main_pumpkin" alt="mainpumpkin" width="1120px" heigh="448px">
         <div class="aside">
             <!--left-->
             <div class="aside-left">
@@ -36,9 +36,9 @@
                     <h3 class="aside-left-header">Vegetables</h2>
                 </div>
                     <div class="aside-left-content">
-                        <img src="img/carrot.png" alt="carrot" width="165px" height="140px">
-                        <img src="img/corn.png" alt="carrot" width="165px" height="140px">
-                        <img src="img/pepper.png" alt="carrot" width="165px" height="140px">
+                        <img src="img/img_vegetables_carrot" alt="carrot" width="165px" height="140px">
+                        <img src="img/img_vegetables_corn" alt="carrot" width="165px" height="140px">
+                        <img src="img/img_vegetables_pepper" alt="carrot" width="165px" height="140px">
                     </div>
             </div>
             <!--right-->
