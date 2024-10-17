@@ -99,13 +99,16 @@ body {
     font-weight: 900;
     font-size: 16px;
     line-height: 44px;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav a:hover {
     background-color: #F7FBDA;
     color: #778A50;
-    border-radius: 0px;
-    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; /* 改變圓角效果 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 增加陰影 */
+    transform: scale(1.05); /* 增加懸停時的放大效果 */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease-in-out;
 }
 
 /* Aside */
