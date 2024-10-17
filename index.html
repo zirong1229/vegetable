@@ -11,13 +11,15 @@
             background-color: #778A50; /* 導覽列的背景顏色 */
         }
         .nav a {
-            color: white; /* 設置鏈接文字顏色 */
+            color: #F7FBDA; /* 預設文字顏色 */
             padding: 15px; /* 添加內邊距以提高點擊範圍 */
             text-decoration: none; /* 去除下劃線 */
             display: inline-block; /* 確保鏈接在同一行 */
+            transition: background-color 0.3s, color 0.3s; /* 平滑過渡效果 */
         }
         .nav a:hover {
-            background-color: #EDF2C5; /* 懸停時鏈接的背景顏色 */
+            background-color: #F7FBDA; /* 懸停時鏈接的背景顏色 */
+            color: #778A50; /* 懸停時鏈接的文字顏色 */
         }
     </style>
 </head>
@@ -96,11 +98,13 @@
 
         navLinks.forEach(link => {
             link.addEventListener('mouseover', () => {
-                link.style.backgroundColor = '#EDF2C5'; // Change to the hover background color
+                link.style.backgroundColor = '#F7FBDA'; // 懸停時的背景顏色
+                link.style.color = '#778A50'; // 懸停時的文字顏色
             });
 
             link.addEventListener('mouseout', () => {
-                link.style.backgroundColor = ''; // Reset to the original background color
+                link.style.backgroundColor = ''; // 還原背景顏色
+                link.style.color = '#F7FBDA'; // 還原文字顏色
             });
         });
     </script>
