@@ -20,9 +20,24 @@
             width: 100px; /* 設置每個鏈接的固定寬度 */
             text-align: center; /* 中心對齊文字 */
             margin: 0; /* 不設置外邊距 */
+            position: relative; /* 為懸停效果提供定位 */
+        }
+        .nav a::after {
+            content: ""; /* 生成伪元素 */
+            position: absolute; /* 絕對定位 */
+            left: 50%; /* 垂直居中 */
+            bottom: 0; /* 將其放置在鏈接底部 */
+            width: 24px; /* 背景顏色的寬度 */
+            height: 100%; /* 高度為鏈接的高度 */
+            background-color: transparent; /* 預設為透明 */
+            transform: translateX(-50%); /* 水平居中 */
+            transition: background-color 0.3s; /* 平滑過渡效果 */
+            z-index: -1; /* 使背景在文本後面 */
+        }
+        .nav a:hover::after {
+            background-color: #F7FBDA; /* 懸停時的背景顏色 */
         }
         .nav a:hover {
-            background-color: #F7FBDA; /* 懸停時鏈接的背景顏色 */
             color: #778A50; /* 懸停時鏈接的文字顏色 */
         }
     </style>
@@ -102,12 +117,10 @@
 
         navLinks.forEach(link => {
             link.addEventListener('mouseover', () => {
-                link.style.backgroundColor = '#F7FBDA'; // Change to the hover background color
                 link.style.color = '#778A50'; // Change the text color on hover
             });
 
             link.addEventListener('mouseout', () => {
-                link.style.backgroundColor = ''; // Reset to original background color
                 link.style.color = '#F7FBDA'; // Reset to original text color
             });
         });
