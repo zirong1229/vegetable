@@ -9,13 +9,17 @@
     <style>
         .nav {
             background-color: #778A50; /* 導覽列的背景顏色 */
+            display: flex; /* 使用 flexbox 來排列鏈接 */
+            justify-content: space-between; /* 使鏈接平均分布 */
         }
         .nav a {
             color: #F7FBDA; /* 預設文字顏色 */
-            padding: 30px; /* 添加內邊距以提高點擊範圍 */
+            padding: 15px; /* 上下填充 */
             text-decoration: none; /* 去除下劃線 */
-            display: inline-block; /* 確保鏈接在同一行 */
             transition: background-color 0.3s, color 0.3s; /* 平滑過渡效果 */
+            width: 100px; /* 設置每個鏈接的固定寬度 */
+            text-align: center; /* 中心對齊文字 */
+            margin: 0; /* 不設置外邊距 */
         }
         .nav a:hover {
             background-color: #F7FBDA; /* 懸停時鏈接的背景顏色 */
@@ -78,7 +82,7 @@
                     <h3 class="aside-right-header">Contact</h3>
                 </div>
                 <div class="aside-right-content">
-                    <p style="height: 54px;margin: 0px">For any questions or suggestions about Vegetables, Vegetables Club or your online order, you can contact Vegetables Customer Service by phone, email or post and we'll be happy to help.</p>
+                    <p style="height: 54px; margin: 0;">For any questions or suggestions about Vegetables, Vegetables Club or your online order, you can contact Vegetables Customer Service by phone, email or post and we'll be happy to help.</p>
                     <hr>
                     <p style="margin: 0;">E-mail: Vegetables@aaabbccc.com</p>
                     <p style="margin: 0;">PHONE: +886-123-456-789</p>
@@ -92,19 +96,19 @@
         <p>Copyrights 2017 Vegetables cise / Design by Vegetables</p>
     </footer>
 
-    <!-- JavaScript to manage nav background change -->
+    <!-- JavaScript to change the nav background -->
     <script>
         const navLinks = document.querySelectorAll('.nav a');
 
         navLinks.forEach(link => {
             link.addEventListener('mouseover', () => {
-                link.style.backgroundColor = '#F7FBDA'; // 懸停時的背景顏色
-                link.style.color = '#778A50'; // 懸停時的文字顏色
+                link.style.backgroundColor = '#F7FBDA'; // Change to the hover background color
+                link.style.color = '#778A50'; // Change the text color on hover
             });
 
             link.addEventListener('mouseout', () => {
-                link.style.backgroundColor = ''; // 還原背景顏色
-                link.style.color = '#F7FBDA'; // 還原文字顏色
+                link.style.backgroundColor = ''; // Reset to original background color
+                link.style.color = '#F7FBDA'; // Reset to original text color
             });
         });
     </script>
