@@ -116,6 +116,7 @@ body {
     border-radius: 0px;
     transition: background-color 0.3s, color 0.3s;
 }
+
 /* Aside */
 .aside {
     display: flex;
@@ -329,3 +330,5 @@ body {
     margin-top: 117px;
     font-size: 12px;
 }
+
+
