@@ -7,15 +7,17 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="CSS/CSS.css" rel="stylesheet" type="text/css">
     <style>
-        /* 導覽列的 z-index 使其位於圖片之上 */
         .nav {
-            position: relative;
-            z-index: 2; /* 確保導覽列在圖片之上 */
-            background-color: #778A50; /* 設定原始背景色 */
+            background-color: #778A50; /* 導覽列的背景顏色 */
         }
-
-        .container a {
-            pointer-events: auto; /* 確保連結的點擊行為正常 */
+        .nav a {
+            color: white; /* 設置鏈接文字顏色 */
+            padding: 15px; /* 添加內邊距以提高點擊範圍 */
+            text-decoration: none; /* 去除下劃線 */
+            display: inline-block; /* 確保鏈接在同一行 */
+        }
+        .nav a:hover {
+            background-color: #EDF2C5; /* 懸停時鏈接的背景顏色 */
         }
     </style>
 </head>
@@ -88,18 +90,17 @@
         <p>Copyrights 2017 Vegetables cise / Design by Vegetables</p>
     </footer>
 
-    <!-- JavaScript to change the nav background -->
+    <!-- JavaScript to manage nav background change -->
     <script>
-        const navBar = document.getElementById('navBar');
         const navLinks = document.querySelectorAll('.nav a');
 
         navLinks.forEach(link => {
             link.addEventListener('mouseover', () => {
-                navBar.style.backgroundColor = '#EDF2C5'; // Change to the hover background color
+                link.style.backgroundColor = '#EDF2C5'; // Change to the hover background color
             });
 
             link.addEventListener('mouseout', () => {
-                navBar.style.backgroundColor = '#778A50'; // Reset to the original background color
+                link.style.backgroundColor = ''; // Reset to the original background color
             });
         });
     </script>
