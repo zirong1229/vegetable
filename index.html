@@ -7,9 +7,15 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="CSS/CSS.css" rel="stylesheet" type="text/css">
     <style>
-        /* 新增的 CSS 以防止圖片干擾導覽列的 hover 效果 */
+        /* 導覽列的 z-index 使其位於圖片之上 */
+        .nav {
+            position: relative;
+            z-index: 2; /* 確保導覽列在圖片之上 */
+            background-color: #778A50; /* 設定原始背景色 */
+        }
+
         .container a {
-            pointer-events: auto; /* 允許點擊事件 */
+            pointer-events: auto; /* 確保連結的點擊行為正常 */
         }
     </style>
 </head>
