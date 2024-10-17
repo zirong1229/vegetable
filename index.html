@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegetables</title>
-<link href="CSS/CSS.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="CSS/CSS.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <!-- Title -->
@@ -21,7 +22,7 @@
 
     <div class="container">
         <!-- Navigation -->
-        <nav class="nav">
+        <nav class="nav" id="navBar">
             <a href="#home" class="home">Home</a>
             <a href="#aboutus" class="aboutus">About Us</a>
             <a href="#vegetables" class="vegetables">Vegetables</a>
@@ -29,8 +30,10 @@
             <a href="#contact" class="contact">Contact</a>        
         </nav>
 
-        <!-- Main Pumpkin Image -->
-        <img src="img/img_main_pumpkin.png" alt="mainpumpkin" width="1120px" height="448px">
+        <!-- Main Pumpkin Image with link to Wikipedia -->
+        <a href="https://en.m.wikipedia.org/wiki/Pumpkin" target="_blank">
+            <img src="img/img_main_pumpkin.png" alt="mainpumpkin" width="1120px" height="448px">
+        </a>
 
         <div class="aside">
             <!-- Left Section -->
@@ -39,9 +42,18 @@
                     <h3 class="aside-left-header">Vegetables</h3>
                 </div>
                 <div class="aside-left-content">
-                    <img src="img/img_vegetables_carrot.png" alt="carrot" width="165px" height="140px">
-                    <img src="img/img_vegetables_corn.png" alt="corn" width="165px" height="140px">
-                    <img src="img/img_vegetables_pepper.png" alt="pepper" width="165px" height="140px">
+                    <!-- Carrot Image with link -->
+                    <a href="https://en.m.wikipedia.org/wiki/Carrot" target="_blank">
+                        <img src="img/img_vegetables_carrot.png" alt="carrot" width="165px" height="140px">
+                    </a>
+                    <!-- Corn Image with link -->
+                    <a href="https://en.m.wikipedia.org/wiki/Maize" target="_blank">
+                        <img src="img/img_vegetables_corn.png" alt="corn" width="165px" height="140px">
+                    </a>
+                    <!-- Bell Pepper Image with link -->
+                    <a href="https://en.m.wikipedia.org/wiki/Bell_pepper" target="_blank">
+                        <img src="img/img_vegetables_pepper.png" alt="bell pepper" width="165px" height="140px">
+                    </a>
                 </div>
             </div>
             <!-- Right Section -->
@@ -63,5 +75,21 @@
     <footer class="footer">
         <p>Copyrights 2017 Vegetables cise / Design by Vegetables</p>
     </footer>
+
+    <!-- JavaScript to change the nav background -->
+    <script>
+        const navBar = document.getElementById('navBar');
+        const navLinks = document.querySelectorAll('.nav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                navBar.style.backgroundColor = '#EDF2C5'; // Change to the hover background color
+            });
+
+            link.addEventListener('mouseout', () => {
+                navBar.style.backgroundColor = '#778A50'; // Reset to the original background color
+            });
+        });
+    </script>
 </body>
 </html>
